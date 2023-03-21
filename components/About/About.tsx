@@ -3,8 +3,12 @@
 function About() {
   return (
     <>
-      <div className="text-zinc-50 w-1/2 mt-36 mx-auto text-center" id="about">
-        <h2 className="font-heading text-5xl ">About me</h2>
+      <section
+        className="text-zinc-50 w-1/2 my-64 mx-auto text-center"
+        id="about"
+      >
+        <h2 className="font-heading text-5xl">About me</h2>
+        <hr className="w-12 h-1 bg-secondary my-4 mx-auto border-0 rounded"></hr>
         <p className="font-sans my-12 text-2xl text-left">
           As a frontend developer currently based in Argentina, I possess strong
           problem-solving and analytical thinking skills. These skills have been
@@ -30,7 +34,7 @@ function About() {
           growing and developing as a frontend developer, and to use my skills
           to create innovative and impactful projects.
         </p>
-      </div>
+      </section>
     </>
   );
 }

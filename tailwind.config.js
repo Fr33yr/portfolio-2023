@@ -1,4 +1,4 @@
-const {fontFamily, backgroundColor, colors} = require('tailwindcss/defaultTheme')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
@@ -9,17 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        sans:['var(--font-monserrat)', ...fontFamily.sans],
-        heading: ['var(--font-poiretone)', ...fontFamily.sans]
+      fontFamily: {
+        sans: ["var(--font-monserrat)", ...fontFamily.sans],
+        heading: ["var(--font-poiretone)", ...fontFamily.sans],
       },
       colors: {
-        primary: '#6FE0E7',
-        secondary: '#4C88FF',
+        primary: "#6FE0E7",
+        secondary: "#4C88FF",
       },
       backgroundColor: {
-        primary: '#1F2D57',
-        secondary: '#4C88FF',
+        primary: "#1F2D57",
+        secondary: "#4C88FF",
       },
     },
   },

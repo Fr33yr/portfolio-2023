@@ -14,12 +14,12 @@ module.exports = {
         heading: ["var(--font-poiretone)", ...fontFamily.sans],
       },
       colors: {
-        primary: "#6FE0E7",
-        secondary: "#4C88FF",
+        primary: "#E34038",
+        secondary: "#FFE7E2",
       },
       backgroundColor: {
-        primary: "#1F2D57",
-        secondary: "#4C88FF",
+        primary: "#0F0F0F",
+        secondary: "#2673B8",
       },
     },
   },

@@ -34,8 +34,15 @@ export default function RootLayout({
       className={`${monserrat.variable} ${poiretOne.variable} font-sans`}
     >
       <body className="bg-primary">
-        <Navigator pathNames={[Routes.HOME, Routes.ABOUT, Routes.PROJECTS]} />
-        <main>{children}</main>
+        <Navigator
+          pathNames={[
+            Routes.HOME,
+            Routes.ABOUT,
+            Routes.SKILLS,
+            Routes.PROJECTS,
+          ]}
+        />
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

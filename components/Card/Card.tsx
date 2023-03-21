@@ -19,8 +19,8 @@ interface Props {
 
 function Card({ data }: Props) {
   return (
-    <div className="flex flex-row-reverse w-fit my-24 mx-auto">
-      <div className="flex flex-col w-96 ml-12 text-secondary">
+    <div className="flex flex-col-reverse w-fit my-24 mx-auto xl:flex-row-reverse">
+      <div className="flex flex-col w-96 mx-auto text-secondary xl:ml-12">
         <h3 className=" text-xl ">{data.title}</h3>
         <p className="text-left m-4">{data.description}</p>
         <ul className="flex flex-wrap list-disc justify-around mt-2 mb-6 mx-12 w-2/3 text-primary">
@@ -69,7 +69,13 @@ function Card({ data }: Props) {
         </div>
       </div>
       {!!data.imgUrl && (
-        <Image width="480" height="228" alt="Image" src={data.imgUrl} />
+        <Image
+          width="480"
+          height="228"
+          alt="Image"
+          src={data.imgUrl}
+          className="mb-8"
+        />
       )}
     </div>
   );

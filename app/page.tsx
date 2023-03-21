@@ -1,11 +1,10 @@
-import { Skills, Welcome, About, Projects } from "../components";
+import { Welcome, About, Projects } from "../components";
 
 function App() {
   return (
     <>
       <Welcome />
       <About />
-      <Skills />
       <Projects />
     </>
   );

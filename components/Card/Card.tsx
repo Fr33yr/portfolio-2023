@@ -31,7 +31,7 @@ function Card({ data }: Props) {
               </li>
             ))}
         </ul>
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center text-3xl">
           {data.repoUrl && (
             <a
               href={data.repoUrl}

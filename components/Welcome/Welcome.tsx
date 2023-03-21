@@ -8,7 +8,7 @@ function Welcome() {
 
   return (
     <>
-      <div className="py-24 px-32 mt-24 text-center flex flex-col justify-around xl:flex-row">
+      <div className="py-24 px-32 mt-24 text-center flex flex-col justify-around md:flex-row">
         <h1 className="text-secondary font-sans font-bold text-5xl mt-24 w-1/3 ">
           Hello im Agustin Cristobo, a{" "}
           <span className="text-primary">Frontend developer</span>

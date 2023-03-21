@@ -1,7 +1,7 @@
 export const data = [
   {
     title: "Mtg deckbuilder",
-    tecnologies: ["react", "redux", "firebase", "sass"],
+    tecnologies: ["React", "Redux", "Firebase", "Sass"],
     description:
       "Used firebase for login and storage and react whit redux to manage the state of the app.",
     imgUrl:

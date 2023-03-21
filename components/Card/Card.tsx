@@ -19,9 +19,17 @@ interface Props {
 function Card({ data }: Props) {
   return (
     <div className="flex flex-row-reverse w-fit my-0 mx-auto">
-      <div className="flex flex-col w-56 ml-12 text-secondary">
+      <div className="flex flex-col w-96 ml-12 text-secondary">
         <h3 className=" text-xl ">{data.title}</h3>
         <p className="text-left m-4">{data.description}</p>
+        <ul className="flex flex-row list-disc justify-around mt-2 mb-6 text-primary">
+          {data.tecnologies &&
+            data.tecnologies.map((item, index) => (
+              <li key={`${index}-${item}`}>
+                <span className="text-zinc-50">{item}</span>
+              </li>
+            ))}
+        </ul>
         <div className="flex flex-row justify-center">
           {data.repoUrl && (
             <a

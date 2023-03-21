@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { ScrollButton } from "../index";
 
 function Welcome() {
   let profileImage =
@@ -21,12 +20,7 @@ function Welcome() {
           className="mt-12 xl:mx-24"
         />
       </div>
-      <button
-        className="text-primary mx-auto my-0 w-fit h-fit absolute left-0 right-0 border-transparent
-      hover:border-primary border-b-4 "
-      >
-        <FontAwesomeIcon icon={faArrowDown} width="32" height="32" />
-      </button>
+      <ScrollButton />
     </>
   );
 }

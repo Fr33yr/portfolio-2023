@@ -1,18 +1,11 @@
-"use client";
-import Link from "next/link";
 import { Route } from "../../models";
+import { ScrollLink } from "../index";
 
 interface Props {
   pathNames: Route[];
 }
 
 function Navigator({ pathNames }: Props) {
-  const handleScroll = (e: React.MouseEvent<HTMLElement>, section: string) => {
-    e.preventDefault();
-    const selection = document.querySelector(`#${section}`);
-    selection?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
       <header>
@@ -23,12 +16,7 @@ function Navigator({ pathNames }: Props) {
           <ul className="flex justify-around p-4 w-1/2">
             {pathNames.map((pathName) => (
               <li key={pathName.path} className="hover:text-zinc-50">
-                <Link
-                  href={pathName.path}
-                  onClick={(e) => handleScroll(e, pathName.name)}
-                >
-                  {pathName.name}
-                </Link>
+                <ScrollLink pathName={pathName} />
               </li>
             ))}
           </ul>

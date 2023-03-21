@@ -26,6 +26,7 @@
     "react/react-in-jsx-scope": "off",
     "react/react-in-tsx-scope": "off",
     "no-console": "error"
-  }
+  },
+  "ignorePatterns": ["**/*blur.ts"]
 }
 //yarn add eslint-plugin-no-console -D

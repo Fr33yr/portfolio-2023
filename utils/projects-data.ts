@@ -1,3 +1,5 @@
+import { capacitechBlur, mtgBlur } from "../models/index";
+
 export const data = [
   {
     title: "Mtg deckbuilder",
@@ -6,6 +8,7 @@ export const data = [
       "Used firebase for login and storage and react whit redux to manage the state of the app.",
     imgUrl:
       "https://res.cloudinary.com/da0mjatsk/image/upload/v1679423446/portfolio/mtg-deckdbuiler_c1sbbk.bmp",
+    imgBlur: mtgBlur,
     repoUrl: "https://github.com/Fr33yr/mtg-deckbuilder",
     deployUrl: "https://mtg-deckbuilder.netlify.app",
     videoUrl: "",
@@ -17,6 +20,7 @@ export const data = [
       and content, and a virtual assistant that answers technology-related questions.`,
     imgUrl:
       "https://res.cloudinary.com/da0mjatsk/image/upload/v1679430206/portfolio/ProjectThumbnail_olqjbd.jpg",
+    imgBlur: capacitechBlur,
     repoUrl: "https://github.com/Fr33yr/CapaciTechKids",
     deployUrl: "",
     videoUrl: "https://www.youtube.com/watch?v=iRvSPs0DwuI",

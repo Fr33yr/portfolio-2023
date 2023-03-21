@@ -8,6 +8,7 @@ export interface CardData {
   tecnologies: string[];
   description: string;
   imgUrl?: string;
+  imgBlur: string;
   repoUrl: string;
   deployUrl: string;
   videoUrl: string;
@@ -74,6 +75,7 @@ function Card({ data }: Props) {
           height="228"
           alt="Image"
           src={data.imgUrl}
+          blurDataURL={data.imgBlur}
           className="mb-8"
         />
       )}

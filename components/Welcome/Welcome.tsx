@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ScrollButton } from "../index";
+import { welcomeBlur } from "../../models/index";
 
 function Welcome() {
   let profileImage =
@@ -14,6 +15,8 @@ function Welcome() {
         </h1>
         <Image
           src={profileImage}
+          blurDataURL={welcomeBlur}
+          priority
           width="300"
           height="300"
           alt="profile-image"

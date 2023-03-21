@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 export interface CardData {
@@ -10,6 +10,7 @@ export interface CardData {
   imgUrl?: string;
   repoUrl: string;
   deployUrl: string;
+  videoUrl: string;
 }
 
 interface Props {
@@ -18,14 +19,14 @@ interface Props {
 
 function Card({ data }: Props) {
   return (
-    <div className="flex flex-row-reverse w-fit my-0 mx-auto">
+    <div className="flex flex-row-reverse w-fit my-24 mx-auto">
       <div className="flex flex-col w-96 ml-12 text-secondary">
         <h3 className=" text-xl ">{data.title}</h3>
         <p className="text-left m-4">{data.description}</p>
-        <ul className="flex flex-row list-disc justify-around mt-2 mb-6 text-primary">
+        <ul className="flex flex-wrap list-disc justify-around mt-2 mb-6 mx-12 w-2/3 text-primary">
           {data.tecnologies &&
             data.tecnologies.map((item, index) => (
-              <li key={`${index}-${item}`}>
+              <li key={`${index}-${item}-${data.title}`} className="mx-2">
                 <span className="text-zinc-50">{item}</span>
               </li>
             ))}
@@ -53,6 +54,16 @@ function Card({ data }: Props) {
                 width="32"
                 height="32"
               />
+            </a>
+          )}
+          {data.videoUrl && (
+            <a
+              href={data.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-8 hover:text-primary"
+            >
+              <FontAwesomeIcon icon={faYoutube} width="32" height="32" />
             </a>
           )}
         </div>

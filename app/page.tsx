@@ -1,11 +1,17 @@
-import { Welcome, About, Projects } from "../components";
+import { Suspense, lazy } from "react";
+import { Loader, Welcome } from "../components";
+
+const About = lazy(() => import("../components/About/About"));
+const Projects = lazy(() => import("../components/Projects/Projects"));
 
 function App() {
   return (
     <>
       <Welcome />
-      <About />
-      <Projects />
+      <Suspense fallback={<Loader />}>
+        <About />
+        <Projects />
+      </Suspense>
     </>
   );
 }

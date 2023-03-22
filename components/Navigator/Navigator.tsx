@@ -23,7 +23,7 @@ function Navigator({ pathNames }: Props) {
     <>
       <header>
         <nav
-          className="text-primary bg-primary flex flex-col justify-between fixed w-screen max-h-16 md:flex-row drop-shadow-md"
+          className="z-40 text-primary bg-primary flex flex-col justify-between fixed w-screen max-h-16 md:flex-row drop-shadow-md"
           style={{ marginTop: "-96px" }}
         >
           <h2 className="text-primary m-2 select-none font-heading text-3xl md:my-auto mx-6">
@@ -41,7 +41,7 @@ function Navigator({ pathNames }: Props) {
             {pathNames.map((pathName) => (
               <li
                 key={pathName.path}
-                className="hover:text-zinc-50 my-36 sm:my-6"
+                className="z-50 hover:text-zinc-50 my-36 sm:my-6"
               >
                 <ScrollLink pathName={pathName} setOpen={setOpen} />
               </li>

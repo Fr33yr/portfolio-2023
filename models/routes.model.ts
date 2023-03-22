@@ -1,5 +1,5 @@
 export const Routes = {
-  HOME: { path: "/", name: "Home" },
+  HOME: { path: "#home", name: "Home" },
   ABOUT: { path: "#about", name: "About me" },
   PROJECTS: { path: "#projects", name: "Projects" },
 };

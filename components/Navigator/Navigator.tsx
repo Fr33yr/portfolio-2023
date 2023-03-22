@@ -9,7 +9,11 @@ function Navigator({ pathNames }: Props) {
   return (
     <>
       <header>
-        <nav className="drop-shadow-md text-primary bg-primary flex flex-row justify-between">
+        <nav
+          className="drop-shadow-md text-primary bg-primary flex flex-row justify-between fixed
+        w-screen max-h-16"
+          style={{ marginTop: "-96px" }}
+        >
           <h2 className="text-primary my-auto mx-6 select-none font-heading text-3xl">
             AC
           </h2>

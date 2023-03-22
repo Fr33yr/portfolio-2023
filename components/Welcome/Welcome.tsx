@@ -13,7 +13,7 @@ function Welcome() {
         id="home"
       >
         <h1 className="text-secondary font-sans font-bold text-5xl mt-24 w-1/3 ">
-          Hello im Agustin Cristobo, a{" "}
+          Hello i&apos;m Agustin Cristobo, a
           <span className="text-primary">Frontend developer</span>
         </h1>
         <Image

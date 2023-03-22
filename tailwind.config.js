@@ -20,6 +20,7 @@ module.exports = {
       backgroundColor: {
         primary: "#0F0F0F",
         secondary: "#2673B8",
+        lightblack: "#141414"
       },
     },
   },

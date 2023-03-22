@@ -33,7 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${monserrat.variable} ${poiretOne.variable} font-sans`}
     >
-      <body className="bg-primary">
+      <body className="bg-lightblack">
         <Navigator pathNames={[Routes.HOME, Routes.ABOUT, Routes.PROJECTS]} />
         <main className="min-h-screen">{children}</main>
         <Footer />

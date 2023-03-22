@@ -23,7 +23,8 @@ function Welcome() {
           width="300"
           height="300"
           alt="profile-image"
-          className="mt-12 xl:mx-24"
+          className="mt-12 xl:mx-24 p-1 border-t-secondary border-t-2 border-r-secondary border-r-2
+          border-l-primary border-l-2 border-b-primary border-b-2 rounded"
         />
       </div>
       <ScrollButton />

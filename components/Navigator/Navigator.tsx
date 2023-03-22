@@ -12,11 +12,11 @@ function Navigator({ pathNames }: Props) {
   const [open, setOpen] = useState(false);
 
   const isOpen = {
-    ul: "bg-primary w-screen text-center md:flex flex-row justify-around",
+    ul: "z-50 bg-primary w-screen text-center md:flex flex-row justify-around",
   };
 
   const isClose = {
-    ul: "bg-primary w-screen text-center hidden md:flex flex-row justify-around",
+    ul: "z-50 bg-primary w-screen text-center hidden md:flex flex-row justify-around",
   };
 
   return (
@@ -41,7 +41,7 @@ function Navigator({ pathNames }: Props) {
             {pathNames.map((pathName) => (
               <li
                 key={pathName.path}
-                className="z-50 hover:text-zinc-50 my-36 sm:my-6"
+                className=" hover:text-zinc-50 my-36 px-1 sm:my-6 "
               >
                 <ScrollLink pathName={pathName} setOpen={setOpen} />
               </li>

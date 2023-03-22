@@ -4,11 +4,13 @@ import { Route } from "../../models";
 
 interface Props {
   pathName: Route;
+  setOpen: Function;
 }
 
-function ScrollLink({ pathName }: Props) {
+function ScrollLink({ pathName, setOpen }: Props) {
   const handleScroll = (e: React.MouseEvent<HTMLElement>, section: string) => {
     e.preventDefault();
+    setOpen(false);
     const selection = document.querySelector(`${section}`);
     selection?.scrollIntoView({ behavior: "smooth" });
   };

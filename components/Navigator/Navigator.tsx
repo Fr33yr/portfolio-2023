@@ -3,6 +3,7 @@ import { useState } from "react";
 import Hamburger from "hamburger-react";
 import { Route } from "../../models";
 import { ScrollLink } from "../index";
+import Link from "next/link";
 
 interface Props {
   pathNames: Route[];
@@ -46,6 +47,11 @@ function Navigator({ pathNames }: Props) {
                 <ScrollLink pathName={pathName} setOpen={setOpen} />
               </li>
             ))}
+            <li className=" hover:text-zinc-50 my-36 px-1 sm:my-6 ">
+              <Link href="/agustin-cristobo-resume.pdf" target="_blank">
+                My Resume
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

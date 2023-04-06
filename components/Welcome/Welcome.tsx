@@ -14,7 +14,7 @@ function Welcome() {
       >
         <h1 className="text-secondary font-sans font-bold text-5xl mt-24 w-1/3 ">
           Hello i&apos;m Agustin Cristobo, a
-          <span className="text-primary">Frontend developer</span>
+          <span className="text-primary"> Frontend developer</span>
         </h1>
         <Image
           src={profileImage}
